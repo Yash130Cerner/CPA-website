@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400;1,500&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --color-navy: #1B2B4B;
+  --color-navy-light: #243660;
+  --color-navy-dark: #111D33;
+
+  --color-teal: #2A7F8E;
+  --color-teal-light: #35A3B5;
+  --color-teal-dark: #1E5F6B;
+
+  --color-gold: #D4A853;
+  --color-gold-light: #E0BE7A;
+  --color-gold-dark: #B8893A;
+
+  --color-surface-white: #FFFFFF;
+  --color-surface-gray: #F7F8FA;
+  --color-surface-cream: #FDF9F3;
+
+  --color-content-primary: #1A1A2E;
+  --color-content-secondary: #4A5568;
+  --color-content-light: #6B7280;
+
+  --color-success: #3A8F6A;
+  --color-border: #E8E9EC;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+
+  --text-display: 3.5rem;
+  --text-display--line-height: 1.1;
+  --text-display--font-weight: 700;
+
+  --text-h1: 2.5rem;
+  --text-h1--line-height: 1.2;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 1.75rem;
+  --text-h2--line-height: 1.3;
+  --text-h2--font-weight: 600;
+
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.4;
+  --text-h3--font-weight: 600;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-body--font-weight: 500;
+
+  --text-body-lg: 1.125rem;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 500;
+
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-small--font-weight: 500;
+
+  --spacing-section: 5rem;
+  --spacing-section-sm: 3rem;
+
+  --radius-card: 0.75rem;
+
+  --shadow-card: 0 4px 20px rgba(27, 43, 75, 0.08);
+  --shadow-card-hover: 0 8px 30px rgba(27, 43, 75, 0.12);
+  --shadow-nav: 0 2px 20px rgba(0, 0, 0, 0.06);
+
+  --max-w-container: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  font-weight: 500;
+  color: #1A1A2E;
+  background: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p strong {
+  font-weight: 700;
+  color: #111827;
+}
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.5rem;
+  background: #1B2B4B;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 0.5rem 0;
+}
+
+.skip-to-content:focus {
+  left: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
