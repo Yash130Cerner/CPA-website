@@ -5,7 +5,7 @@ import Button from "../ui/Button";
 export default function Hero() {
   return (
     <section id="home" className="bg-surface-white" aria-labelledby="hero-heading">
-      <div className="max-w-container mx-auto px-6 py-10 md:py-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+      <div className="max-w-container mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
         {/* Text column */}
         <div className="flex-[1_1_55%] text-center lg:text-left">
           <h1

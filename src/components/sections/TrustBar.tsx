@@ -1,8 +1,8 @@
-import { Shield, Clock, Users, Star } from "lucide-react";
+import { Shield, Clock, Users, Star, Globe } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { trustBadges } from "../../data/content";
 
-const iconMap: Record<string, LucideIcon> = { Shield, Clock, Users, Star };
+const iconMap: Record<string, LucideIcon> = { Shield, Clock, Users, Star, Globe };
 
 export default function TrustBar() {
   return (

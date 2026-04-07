@@ -29,7 +29,7 @@ export default function Testimonials() {
 
         <div className="text-center mt-8">
           <a
-            href="#"
+            href="https://share.google/xcjkBvZ853g8UByWf"
             target="_blank"
             rel="noopener noreferrer"
             className="text-teal font-medium hover:underline transition-colors duration-200"

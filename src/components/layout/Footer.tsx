@@ -1,5 +1,4 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import { LinkedInIcon, FacebookIcon, InstagramIcon } from "../ui/SocialIcons";
 import { siteConfig, navLinks } from "../../data/content";
 
 export default function Footer() {
@@ -12,35 +11,7 @@ export default function Footer() {
             <p className="text-h3 font-bold">{siteConfig.firmName}</p>
             <p className="mt-2 text-body text-white/75 font-medium">{siteConfig.tagline}</p>
 
-            <div className="flex gap-4 mt-6">
-              <a
-                href={siteConfig.socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="text-white/75 hover:text-white transition-colors duration-200"
-              >
-                <LinkedInIcon className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-white/75 hover:text-white transition-colors duration-200"
-              >
-                <FacebookIcon className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-white/75 hover:text-white transition-colors duration-200"
-              >
-                <InstagramIcon className="w-5 h-5" />
-              </a>
-            </div>
+            <p className="mt-4 text-small text-white/50">Serving clients across Canada — virtually &amp; in person</p>
           </div>
 
           {/* Col 2: Quick Links */}

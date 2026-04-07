@@ -2,9 +2,11 @@ import {
   FileText,
   Building2,
   BookOpen,
-  DollarSign,
   Receipt,
-  TrendingUp,
+  Home,
+  Briefcase,
+  Search,
+  User,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -12,9 +14,11 @@ const iconMap: Record<string, LucideIcon> = {
   FileText,
   Building2,
   BookOpen,
-  DollarSign,
   Receipt,
-  TrendingUp,
+  Home,
+  Briefcase,
+  Search,
+  User,
 };
 
 interface ServiceCardProps {

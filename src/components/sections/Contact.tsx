@@ -1,10 +1,9 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
-import { LinkedInIcon, FacebookIcon, InstagramIcon } from "../ui/SocialIcons";
+import { Phone, Mail, MapPin, Clock, Globe } from "lucide-react";
 import { siteConfig } from "../../data/content";
 import SectionHeading from "../ui/SectionHeading";
 
 const inputClass =
-  "w-full border border-border rounded-lg px-4 py-3 text-body text-content-primary bg-white outline-none transition-[border-color,box-shadow] duration-200 focus:border-teal focus:shadow-[0_0_0_3px_rgba(42,127,142,0.1)]";
+  "w-full border border-[#E8E9EC] rounded-lg px-4 py-3 text-[#111827] font-medium bg-white focus:border-[#2A7F8E] focus:ring-2 focus:ring-[#2A7F8E]/10 focus:outline-none transition-colors duration-200";
 
 export default function Contact() {
   return (
@@ -131,6 +130,13 @@ export default function Contact() {
                   <p>{siteConfig.hours.weekends}</p>
                 </div>
               </div>
+              <div className="flex items-start gap-4 text-body text-[#374151] font-medium">
+                <Globe className="w-5 h-5 text-teal shrink-0 mt-0.5" aria-hidden="true" />
+                <div>
+                  <p className="font-semibold text-[#111827]">Languages spoken</p>
+                  <p>{siteConfig.languages.join(" · ")}</p>
+                </div>
+              </div>
             </div>
 
             {/* Map */}
@@ -148,36 +154,6 @@ export default function Contact() {
               />
             </div>
 
-            {/* Social */}
-            <div className="flex gap-4 mt-6">
-              <a
-                href={siteConfig.socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-                className="text-teal hover:text-teal-dark transition-colors duration-200"
-              >
-                <LinkedInIcon className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-teal hover:text-teal-dark transition-colors duration-200"
-              >
-                <FacebookIcon className="w-5 h-5" />
-              </a>
-              <a
-                href={siteConfig.socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-                className="text-teal hover:text-teal-dark transition-colors duration-200"
-              >
-                <InstagramIcon className="w-5 h-5" />
-              </a>
-            </div>
           </div>
         </div>
       </div>
