@@ -1,6 +1,6 @@
 export const siteConfig = {
   firmName: "P. Shah Accounting and Tax Services",
-  tagline: "Your Trusted Tax & Accounting Partner Across Canada",
+  tagline: "Your Trusted Accounting & Tax Partner",
   phone: "647-456-9444",
   email: "cpapriyashah@gmail.com",
   address: "356 Col. Phillips Drive, Shelburne, ON L9V 3V5",
@@ -20,15 +20,15 @@ export const siteConfig = {
 };
 
 export const heroContent = {
-  headline: "Tax Filing & Accounting, Simplified — Across Canada",
+  headline: "Simplified Accounting & Tax Filing",
   subtext:
-    "We help individuals and small businesses across Canada navigate taxes with confidence. Personalized service, year-round support, and peace of mind — virtually or in person.",
+    "We help individuals and small businesses across Canada navigate their accounting and taxes with confidence. Personalized service, year-round support, and peace of mind - virtually or in person.",
   primaryCta: "Book Free Consultation",
   secondaryCta: "Explore Our Services",
 };
 
 export const trustBadges = [
-  { icon: "Shield", label: "CPA Certified" },
+  { icon: "Shield", label: "CPA Member", logo: "/images/cpa-canada-logo.jpg" },
   { icon: "Clock", label: "20+ Years Experience" },
   { icon: "Globe", label: "Serving All of Canada" },
   { icon: "Star", label: "5-Star Google Rating" },
@@ -38,37 +38,27 @@ export const services = [
   {
     icon: "Building2",
     title: "Commercial Property Accounting",
-    description: "Full-cycle accounting for <strong>commercial property portfolios</strong> — from acquisition to disposition. Expertise in budgeting, forecasting, and financial reporting using <strong>Yardi & Buildium</strong>.",
+    description: "Full-cycle, audit-ready accounting for <strong>commercial property portfolios</strong> - from acquisition to disposition. Expertise in monthly bookkeeping, budgeting, forecasting, <strong>CAM reconciliation</strong>, and financial reporting.",
   },
   {
     icon: "Home",
     title: "Condominium Accounting",
-    description: "Specialized <strong>condominium corporation accounting</strong> including reserve fund management, status certificate support, and <strong>CAM reconciliations</strong> to keep your condo finances audit-ready.",
+    description: "Specialized <strong>condominium corporation</strong> full-cycle accounting - including operating and reserve fund management, monthly financial reports, bookkeeping, <strong>CAO filing and compliance</strong>, and annual budgeting.",
   },
   {
     icon: "Briefcase",
     title: "Small Business Accounting",
-    description: "Comprehensive accounting solutions for <strong>small businesses</strong> — bookkeeping, financial statements, cash flow management, and strategic advice to help you <strong>grow with confidence</strong>. Including guidance through the <strong>business incorporation</strong> process.",
-  },
-  {
-    icon: "FileText",
-    title: "Corporate Tax Services",
-    description: "Strategic <strong>corporate tax planning</strong> and filing for incorporated businesses across Canada. We ensure <strong>GAAP compliance</strong> and minimize your tax burden year after year.",
+    description: "We give special attention to incorporating businesses - <strong>setting you up for success</strong> from day one. Comprehensive accounting solutions for <strong>small businesses</strong> including bookkeeping, payroll, financial statements, cash flow management, corporate tax filing, and strategic advice to help you <strong>grow with confidence</strong>.",
   },
   {
     icon: "User",
     title: "Personal Tax Preparation",
-    description: "Accurate, optimized <strong>personal tax filing</strong> for all income levels — salaried, self-employed, rental income, and <strong>newcomers to Canada</strong>. Every deduction you deserve.",
-  },
-  {
-    icon: "BookOpen",
-    title: "Bookkeeping & Payroll",
-    description: "Full-cycle bookkeeping — <strong>monthly, quarterly, or annually</strong> — plus complete <strong>payroll management</strong> including T4s, ROEs, and CRA remittances. Always organized, always on time.",
+    description: "Accurate, optimized <strong>personal tax filing</strong> for all income sources - salaried, self-employed, rental and Airbnb income, gig economy (Uber, Skip The Dishes, DoorDash), and <strong>newcomers to Canada</strong>. Every deduction you deserve.",
   },
   {
     icon: "Receipt",
     title: "GST/HST Filing",
-    description: "Timely and accurate <strong>GST/HST returns</strong> with proactive planning to minimize your <strong>tax burden</strong> and avoid penalties.",
+    description: "Timely and accurate <strong>GST/HST filings</strong> with proactive planning to minimize your <strong>tax burden</strong> and avoid penalties.",
   },
   {
     icon: "Search",
@@ -78,18 +68,15 @@ export const services = [
 ];
 
 export const aboutContent = {
-  // TODO: Confirm with client — resume says "Priya Shah", site currently shows "Phoolrekha Shah"
-  // Verify which name she prefers for the website
-  name: "Phoolrekha Shah",
+  name: "Priya (Phoolrekha) Shah",
   title: "CPA, MBA",
   role: "Founder & Principal Accountant",
   bio: [
-    // TODO: If name above is changed to "Priya Shah", this intro already matches perfectly
-    // If keeping "Phoolrekha Shah", verify "Hi, I'm Priya" still reads well (nickname usage)
-    "Hi, I'm Priya — the founder of <strong>P. Shah Accounting and Tax Services</strong>. With over <strong>20 years of experience</strong> in accounting and finance, I've helped hundreds of individuals and small businesses across Canada take control of their finances.",
-    "I earned my <strong>CPA designation in 2019</strong> and hold an <strong>MBA from Sunderland University, UK</strong>. My career spans property management accounting, compliance auditing, and financial services — giving me a uniquely broad perspective that I bring to every client engagement.",
-    "As Controller at Novo Property Management, I helped grow gross revenue by <strong>200%</strong> and managed full-cycle accounting for a diverse property portfolio — from commercial acquisitions through to condominium conversions. I also reduced accounts receivable by over <strong>80%</strong> in just two years.",
-    "My approach is simple: I treat every client's finances as if they were my own. Whether you're an individual, a small business, or a property owner — I'm here to make accounting <strong>straightforward, stress-free, and empowering</strong>. Serving clients virtually across all of Canada.",
+    "Hi, I am Priya (Phoolrekha) - the founder of <strong>P. Shah Accounting and Tax Services</strong>. With over <strong>20 years of experience</strong> in accounting and finance, I have helped hundreds of individuals and small businesses across Canada take control of their finances and saved them thousands of dollars.",
+    "I earned my <strong>CPA designation in 2019 in Ontario</strong> and hold an <strong>MBA from Sunderland University, UK</strong>.",
+    "My career spans <strong>property accounting</strong>, <strong>compliance auditing</strong>, and financial services - giving me a uniquely broad perspective that I bring to every client engagement. This cross-industry experience allows me to see the bigger picture of each client's short-term and long-term financial and accounting needs.",
+    "My goal is simple: let my clients focus on their business and not worry about accounting and the CRA.",
+    "I treat every client's accounting and finances as if they were my own - with <strong>utmost confidentiality and data protection</strong>. Whether you are an individual, a small business owner, or a property owner, I am here to make accounting <strong>straightforward, stress-free</strong>, and focused on minimizing your tax liabilities. Serving clients virtually and in person across all industries in Canada.",
   ],
   credentials: [
     "CPA",
@@ -97,8 +84,7 @@ export const aboutContent = {
     "Investment Funds in Canada",
     "20+ Years Experience",
     "Member, CPA Canada",
-    "Yardi & Buildium Expert",
-    "Property Management Specialist",
+    "Property Accounting Specialist",
   ],
   languages: ["English", "Hindi", "Punjabi", "Gujarati", "Sindhi"],
   imagePlaceholder: true,
@@ -109,7 +95,7 @@ export const howItWorks = [
     step: 1,
     title: "Book a Free Call",
     description:
-      "Schedule a no-obligation consultation — virtually or in person. We'll learn about your situation and how we can help.",
+      "Schedule a no-obligation consultation - virtually or in person. We will learn about your situation and how we can help.",
   },
   {
     step: 2,
@@ -121,7 +107,7 @@ export const howItWorks = [
     step: 3,
     title: "We Handle Everything",
     description:
-      "Sit back while we manage your taxes and finances. You'll have year-round support whenever you need us — across Canada.",
+      "Sit back while we manage your taxes and finances. You will have year-round support whenever you need us - across Canada.",
   },
 ];
 
@@ -137,7 +123,7 @@ export const testimonials = [
     name: "David M.",
     role: "Freelance Consultant",
     quote:
-      "I've been with P. Shah Accounting for three years now. They're always responsive, thorough, and proactive about finding deductions I didn't even know existed. Best accountant I've ever had.",
+      "I have been with P. Shah Accounting for three years now. They are always responsive, thorough, and proactive about finding deductions I did not even know existed. Best accountant I have ever had.",
     rating: 5,
   },
   {
@@ -159,53 +145,47 @@ export const testimonials = [
 export const faqs = [
   {
     question:
-      "Do I really need an accountant, or can I file my taxes myself?",
+      "Do I really need an accountant, or can I file my personal taxes myself?",
     answer:
       "While simple returns can be self-filed, a CPA can identify deductions and credits you may miss, help avoid costly errors, and provide strategic advice to minimize your taxes over time. Most clients find the savings far exceed the cost of professional preparation.",
   },
   {
     question:
-      "Do you serve clients outside of Shelburne / Ontario?",
+      "Do you serve clients outside of Ontario?",
     answer:
-      "Absolutely — we serve clients across all of Canada, primarily virtually. Most of our client interactions happen over video call and secure document sharing. In-person meetings are available when truly needed.",
-  },
-  {
-    question:
-      "What documents should I bring to my first consultation?",
-    answer:
-      "For individuals: T4s, T5s, RRSP receipts, medical expense receipts, and any self-employment income records. For businesses: financial statements, bank statements, expense receipts, and incorporation documents. Don't worry if you're missing something — we'll guide you through exactly what's needed.",
+      "Yes! We serve clients across all industries throughout Canada - virtually and in person. Our deepest expertise is in property accounting (commercial, condominium, and rental), small businesses, and incorporated professionals.",
   },
   {
     question: "Do you offer a free initial consultation?",
     answer:
-      "Yes! We offer a free, no-obligation initial consultation so we can understand your needs and explain how we can help — with no pressure.",
+      "Yes! We offer a free, no-obligation initial consultation so we can understand your needs and explain how we can help - with no pressure.",
   },
   {
     question: "What industries do you specialize in?",
     answer:
-      "We serve clients across all industries. Our deepest expertise is in property management and real estate accounting (commercial, condominium, and rental), small businesses, and incorporated professionals — but we welcome clients from any sector.",
+      "We serve clients across all industries. Our deepest expertise is in property accounting (commercial, condominium, and rental), small businesses, and incorporated professionals.",
   },
   {
     question: "Do you help newcomers to Canada?",
     answer:
-      "Yes — we specialize in helping newcomers understand their tax obligations, first-year filing requirements, foreign income reporting, and available credits. We serve clients in English, Hindi, Punjabi, Gujarati, and Sindhi.",
+      "Absolutely! Being an immigrant myself, I understand the financial challenges faced by newcomers in Canada. We want to set up newcomers for success - helping with tax obligations, first-year filing requirements, foreign income reporting, and available credits. We serve clients in English, Hindi, Punjabi, Gujarati, and Sindhi.",
   },
   {
     question: "What happens if I get audited by the CRA?",
     answer:
-      "If you're our client, we've got your back. We handle all CRA communications, prepare the necessary documentation, and represent you throughout the audit process. Our thorough preparation means our clients rarely face issues during audits.",
+      "If you are our client, we have got your back. We handle all CRA communications, prepare the necessary documentation, and represent you throughout the audit process. Our thorough preparation means our clients rarely face issues during audits. We have successfully managed numerous HST audits, securing thousands of dollars in Input Tax Credits for our clients.",
   },
   {
     question: "What software do you work with?",
     answer:
-      "We have deep expertise in Yardi and Buildium for property management accounting, and work with QuickBooks, Sage, and other standard platforms for small business clients.",
+      "We have extensive expertise in Yardi and Buildium for property accounting, and work with QuickBooks for small business clients.",
   },
 ];
 
 export const ctaBanner = {
   headline: "Ready to Simplify Your Taxes?",
   subtext:
-    "Book your free consultation today — virtually or in person. Let us take the stress out of tax season, wherever you are in Canada.",
+    "Book your free consultation today - virtually or in person. Let us take the stress out of tax season, wherever you are in Canada.",
   cta: "Book Free Consultation",
 };
 

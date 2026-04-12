@@ -13,7 +13,7 @@ export default function Services() {
         <SectionHeading
           id="services-heading"
           title="Our Services"
-          subtitle="Comprehensive tax and accounting solutions tailored to your needs"
+          subtitle="Comprehensive accounting and tax solutions tailored to your needs"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

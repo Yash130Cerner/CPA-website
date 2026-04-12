@@ -14,7 +14,7 @@ export default function About() {
           {/* Image placeholder */}
           <div className="lg:w-[45%] w-[80%] mx-auto lg:mx-0 max-w-[420px]">
             <div className="relative max-h-[360px] md:max-h-[520px]">
-              {/* Decorative rectangle behind — hidden on mobile */}
+              {/* Decorative rectangle behind - hidden on mobile */}
               <div
                 className="hidden md:block absolute inset-0 bg-gold/[0.12] rounded-card translate-x-3 translate-y-3 rotate-2 z-0"
                 aria-hidden="true"

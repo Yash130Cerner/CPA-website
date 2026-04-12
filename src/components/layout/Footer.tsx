@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="text-h3 font-bold">{siteConfig.firmName}</p>
             <p className="mt-2 text-body text-white/75 font-medium">{siteConfig.tagline}</p>
 
-            <p className="mt-4 text-small text-white/50">Serving clients across Canada — virtually &amp; in person</p>
+            <p className="mt-4 text-small text-white/50">Serving clients across Canada - virtually &amp; in person</p>
           </div>
 
           {/* Col 2: Quick Links */}

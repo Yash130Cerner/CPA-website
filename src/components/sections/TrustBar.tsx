@@ -19,12 +19,18 @@ export default function TrustBar() {
                 key={badge.label}
                 className="flex items-center justify-center gap-3"
               >
-                {Icon && (
+                {"logo" in badge && badge.logo ? (
+                  <img
+                    src={badge.logo}
+                    alt="CPA Canada Member"
+                    className="h-24 -my-8 w-auto object-contain mix-blend-multiply"
+                  />
+                ) : Icon ? (
                   <Icon
                     className="w-6 h-6 text-teal"
                     aria-hidden="true"
                   />
-                )}
+                ) : null}
                 <span className="text-small text-[#374151] font-semibold">
                   {badge.label}
                 </span>

@@ -1,7 +1,5 @@
 import {
-  FileText,
   Building2,
-  BookOpen,
   Receipt,
   Home,
   Briefcase,
@@ -11,9 +9,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
-  FileText,
   Building2,
-  BookOpen,
   Receipt,
   Home,
   Briefcase,

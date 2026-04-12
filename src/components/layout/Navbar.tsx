@@ -93,9 +93,16 @@ export default function Navbar() {
       )}
       aria-label="Main navigation"
     >
-      <div className="max-w-container mx-auto px-6 h-[72px] flex items-center justify-between">
-        <a href="#home" className="text-navy font-bold text-xl tracking-tight">
-          {siteConfig.firmName}
+      <div className="max-w-container mx-auto px-6 h-[72px] flex items-center justify-between overflow-hidden">
+        <a href="#home" className="flex items-center gap-3">
+          <img
+            src="/images/pshah-logo.png"
+            alt={siteConfig.firmName}
+            className="h-20 lg:h-24 -my-6 lg:-my-8 w-auto object-contain"
+          />
+          <span className="text-navy font-bold text-lg tracking-tight hidden sm:inline">
+            {siteConfig.firmName}
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -147,10 +154,17 @@ export default function Navbar() {
         <div className="flex items-center justify-between px-6 h-[72px]">
           <a
             href="#home"
-            className="text-navy font-bold text-xl tracking-tight"
+            className="flex items-center gap-3"
             onClick={closeMobile}
           >
-            {siteConfig.firmName}
+            <img
+              src="/images/pshah-logo.png"
+              alt={siteConfig.firmName}
+              className="h-20 -my-6 w-auto object-contain"
+            />
+            <span className="text-navy font-bold text-lg tracking-tight">
+              {siteConfig.firmName}
+            </span>
           </a>
           <button
             onClick={closeMobile}
