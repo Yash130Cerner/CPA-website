@@ -8,15 +8,26 @@ export default function Hero() {
       <div className="max-w-container mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
         {/* Text column */}
         <div className="flex-[1_1_55%] text-center lg:text-left">
-          <h1
-            id="hero-heading"
-            className="text-h1 md:text-display text-navy font-bold"
-          >
-            {heroContent.headline}
-          </h1>
-          <p className="mt-6 text-body-lg text-[#374151] font-medium max-w-[540px] mx-auto lg:mx-0">
-            {heroContent.subtext}
-          </p>
+          {heroContent.headline ? (
+            <>
+              <h1
+                id="hero-heading"
+                className="text-h1 md:text-display text-navy font-bold"
+              >
+                {heroContent.headline}
+              </h1>
+              <p className="mt-6 text-body-lg text-[#374151] font-medium max-w-[540px] mx-auto lg:mx-0">
+                {heroContent.subtext}
+              </p>
+            </>
+          ) : (
+            <p
+              id="hero-heading"
+              className="text-3xl lg:text-4xl font-bold text-navy leading-tight max-w-xl mx-auto lg:mx-0"
+            >
+              {heroContent.subtext}
+            </p>
+          )}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button href="#contact" variant="primary">
               {heroContent.primaryCta}

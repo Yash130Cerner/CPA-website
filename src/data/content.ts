@@ -20,7 +20,9 @@ export const siteConfig = {
 };
 
 export const heroContent = {
-  headline: "Simplified Accounting & Tax Filing",
+  // TODO: Client requested removing "Simplified Accounting & Tax Filing" — awaiting her response on replacement headline
+  // Once she confirms, update this value. If she wants no headline, the Hero component needs to conditionally hide it.
+  headline: "",
   subtext:
     "We help individuals and small businesses across Canada navigate their accounting and taxes with confidence. Personalized service, year-round support, and peace of mind - virtually or in person.",
   primaryCta: "Book Free Consultation",
@@ -48,12 +50,12 @@ export const services = [
   {
     icon: "Briefcase",
     title: "Small Business Accounting",
-    description: "We give special attention to incorporating businesses - <strong>setting you up for success</strong> from day one. Comprehensive accounting solutions for <strong>small businesses</strong> including bookkeeping, payroll, financial statements, cash flow management, corporate tax filing, and strategic advice to help you <strong>grow with confidence</strong>.",
+    description: "Starting from incorporating a business to dissolving a business – we do it all. Comprehensive accounting solutions for <strong>small businesses</strong> including bookkeeping, payroll, financial statements, cash flow management, corporate tax filing, and strategic advice to help you <strong>grow your business with confidence</strong>.",
   },
   {
     icon: "User",
     title: "Personal Tax Preparation",
-    description: "Accurate, optimized <strong>personal tax filing</strong> for all income sources - salaried, self-employed, rental and Airbnb income, gig economy (Uber, Skip The Dishes, DoorDash), and <strong>newcomers to Canada</strong>. Every deduction you deserve.",
+    description: "Accurate, optimized <strong>personal tax filing</strong> for all income sources - salaried, self-employed, rental and Airbnb income optimization, gig economy (Uber, Skip The Dishes, DoorDash), and <strong>newcomers to Canada</strong>. We ensure that you get the maximum out of your tax dollars.",
   },
   {
     icon: "Receipt",
@@ -74,9 +76,9 @@ export const aboutContent = {
   bio: [
     "Hi, I am Priya (Phoolrekha) - the founder of <strong>P. Shah Accounting and Tax Services</strong>. With over <strong>20 years of experience</strong> in accounting and finance, I have helped hundreds of individuals and small businesses across Canada take control of their finances and saved them thousands of dollars.",
     "I earned my <strong>CPA designation in 2019 in Ontario</strong> and hold an <strong>MBA from Sunderland University, UK</strong>.",
-    "My career spans <strong>property accounting</strong>, <strong>compliance auditing</strong>, and financial services - giving me a uniquely broad perspective that I bring to every client engagement. This cross-industry experience allows me to see the bigger picture of each client's short-term and long-term financial and accounting needs.",
-    "My goal is simple: let my clients focus on their business and not worry about accounting and the CRA.",
-    "I treat every client's accounting and finances as if they were my own - with <strong>utmost confidentiality and data protection</strong>. Whether you are an individual, a small business owner, or a property owner, I am here to make accounting <strong>straightforward, stress-free</strong>, and focused on minimizing your tax liabilities. Serving clients virtually and in person across all industries in Canada.",
+    "With a diverse professional background spanning <strong>property accounting</strong>, <strong>compliance auditing</strong>, and financial services, I provide a comprehensive perspective tailored to each client engagement. This cross-industry expertise enables me to evaluate the bigger picture, ensuring both immediate requirements and long-term financial objectives are strategically aligned.",
+    "My mission is to empower business owners to focus on their core operations by removing the complexities of accounting and CRA compliance. I manage every client's financial portfolio with the highest standard of integrity, treating their data with the same diligence, <strong>confidentiality, and protection</strong> I would apply to my own.",
+    "Whether working with individuals, small business owners, or property investors, my goal is to deliver <strong>straightforward, stress-free solutions</strong> designed to minimize tax liabilities. I am proud to serve clients across all industries throughout Canada, providing both virtual and in-person support.",
   ],
   credentials: [
     "CPA",
@@ -95,7 +97,7 @@ export const howItWorks = [
     step: 1,
     title: "Book a Free Call",
     description:
-      "Schedule a no-obligation consultation - virtually or in person. We will learn about your situation and how we can help.",
+      "Schedule a no-obligation consultation - virtually or in person to help us understand your situation.",
   },
   {
     step: 2,
@@ -153,7 +155,7 @@ export const faqs = [
     question:
       "Do you serve clients outside of Ontario?",
     answer:
-      "Yes! We serve clients across all industries throughout Canada - virtually and in person. Our deepest expertise is in property accounting (commercial, condominium, and rental), small businesses, and incorporated professionals.",
+      "Yes! We serve clients across all industries throughout Canada - virtually and in person.",
   },
   {
     question: "Do you offer a free initial consultation?",
@@ -185,7 +187,7 @@ export const faqs = [
 export const ctaBanner = {
   headline: "Ready to Simplify Your Taxes?",
   subtext:
-    "Book your free consultation today - virtually or in person. Let us take the stress out of tax season, wherever you are in Canada.",
+    "Book your free consultation today - virtually or in person.",
   cta: "Book Free Consultation",
 };
 
