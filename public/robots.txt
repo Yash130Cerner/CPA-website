@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pshahaccounting.ca/sitemap.xml
+Sitemap: https://pshah-cpa.ca/sitemap.xml

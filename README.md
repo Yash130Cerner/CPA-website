@@ -32,7 +32,7 @@ Set these in the Vercel project (Settings → Environment Variables):
 | --- | --- | --- |
 | `RESEND_API_KEY` | Yes | Resend API key. Without it the endpoint returns a 500 and the form shows the phone/email fallback. |
 | `CONTACT_TO_EMAIL` | No | Where inquiries are delivered. Defaults to `cpapriyashah@gmail.com`. |
-| `CONTACT_FROM_EMAIL` | No | The `From` address, e.g. `P. Shah Accounting <noreply@pshahaccounting.ca>`. |
+| `CONTACT_FROM_EMAIL` | No | The `From` address, e.g. `P. Shah Accounting <noreply@pshah-cpa.ca>`. |
 
 ### Before going live
 
@@ -41,7 +41,7 @@ delivery to the visitor will fail. The default `onboarding@resend.dev`
 only sends to the address that owns the Resend account, so it is
 suitable for testing and not for production.
 
-1. Add and verify `pshahaccounting.ca` in Resend (DNS records for DKIM/SPF).
+1. Add and verify `pshah-cpa.ca` in Resend (DNS records for DKIM/SPF).
 2. Set `CONTACT_FROM_EMAIL` to an address on that domain.
 3. Submit one real test inquiry and confirm **both** emails arrive.
 
