@@ -43,6 +43,7 @@ export default function AccordionItem({
         id={panelId}
         role="region"
         aria-labelledby={buttonId}
+        inert={!isOpen}
         className={cn(
           "grid transition-[grid-template-rows] duration-200",
           isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"

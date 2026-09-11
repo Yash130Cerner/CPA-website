@@ -1,11 +1,12 @@
-import { UserCircle } from "lucide-react";
 import { heroContent } from "../../data/content";
 import Button from "../ui/Button";
+
+const PORTRAIT_SIZES = "(max-width: 1023px) 80vw, 480px";
 
 export default function Hero() {
   return (
     <section id="home" className="bg-surface-white" aria-labelledby="hero-heading">
-      <div className="max-w-container mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
+      <div className="max-w-site mx-auto px-6 pt-8 pb-10 md:pt-10 md:pb-16 flex flex-col lg:flex-row items-center gap-10 lg:gap-12">
         {/* Text column */}
         <div className="flex-[1_1_55%] text-center lg:text-left">
           {heroContent.headline ? (
@@ -21,12 +22,12 @@ export default function Hero() {
               </p>
             </>
           ) : (
-            <p
+            <h1
               id="hero-heading"
               className="text-3xl lg:text-4xl font-bold text-navy leading-tight max-w-xl mx-auto lg:mx-0"
             >
               {heroContent.subtext}
-            </p>
+            </h1>
           )}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <Button href="#contact" variant="primary">
@@ -38,30 +39,26 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Image placeholder column */}
+        {/* Portrait */}
         <div className="flex-[1_1_40%] w-full max-w-[480px]">
-          <div className="aspect-[4/5] max-h-[320px] md:max-h-[500px] w-full rounded-2xl overflow-hidden bg-gradient-to-br from-teal to-navy flex flex-col items-center justify-center shadow-card relative">
-            {/* Decorative circle */}
-            <div
-              className="absolute top-[15%] -right-[10%] w-[60%] aspect-square rounded-full bg-white/10"
-              aria-hidden="true"
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/images/priya-shah-540.webp 540w, /images/priya-shah.webp 1080w"
+              sizes={PORTRAIT_SIZES}
             />
-            <div
-              className="absolute bottom-[10%] -left-[8%] w-[40%] aspect-square rounded-full bg-white/[0.07]"
-              aria-hidden="true"
+            <img
+              src="/images/priya-shah.jpg"
+              srcSet="/images/priya-shah-540.jpg 540w, /images/priya-shah.jpg 1080w"
+              sizes={PORTRAIT_SIZES}
+              width={1080}
+              height={1446}
+              loading="eager"
+              fetchPriority="high"
+              alt="Priya Shah, CPA, MBA, founder of P. Shah Accounting and Tax Services"
+              className="aspect-[4/5] w-full rounded-2xl object-cover object-[50%_20%] shadow-card"
             />
-            <UserCircle
-              className="w-[120px] h-[120px] text-white/40 relative z-10"
-              strokeWidth={0.8}
-              aria-hidden="true"
-            />
-            <span
-              className="mt-3 text-small text-white/30 uppercase tracking-widest font-medium relative z-10"
-              aria-hidden="true"
-            >
-              Photo
-            </span>
-          </div>
+          </picture>
         </div>
       </div>
     </section>

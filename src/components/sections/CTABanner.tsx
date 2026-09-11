@@ -7,7 +7,7 @@ export default function CTABanner() {
       className="bg-gradient-to-br from-navy to-navy-dark py-16"
       aria-label="Call to action"
     >
-      <div className="max-w-container mx-auto px-6 text-center">
+      <div className="max-w-site mx-auto px-6 text-center">
         <h2 className="text-h1 text-white font-bold">{ctaBanner.headline}</h2>
         <p className="mt-4 text-body-lg text-white/85 font-medium max-w-[500px] mx-auto">
           {ctaBanner.subtext}

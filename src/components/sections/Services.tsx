@@ -9,7 +9,7 @@ export default function Services() {
       className="bg-surface-white py-section"
       aria-labelledby="services-heading"
     >
-      <div className="max-w-container mx-auto px-6">
+      <div className="max-w-site mx-auto px-6">
         <SectionHeading
           id="services-heading"
           title="Our Services"

@@ -9,7 +9,7 @@ export default function About() {
       className="bg-surface-gray py-section"
       aria-labelledby="about-heading"
     >
-      <div className="max-w-container mx-auto px-6">
+      <div className="max-w-site mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           {/* Image placeholder */}
           <div className="lg:w-[45%] w-[80%] mx-auto lg:mx-0 max-w-[420px]">

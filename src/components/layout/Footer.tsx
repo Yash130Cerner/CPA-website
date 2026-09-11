@@ -4,7 +4,7 @@ import { siteConfig, navLinks } from "../../data/content";
 export default function Footer() {
   return (
     <footer className="bg-navy-dark text-white">
-      <div className="max-w-container mx-auto px-6 pt-12 pb-6">
+      <div className="max-w-site mx-auto px-6 pt-12 pb-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {/* Col 1: Firm info */}
           <div>

@@ -5,7 +5,7 @@ export const siteConfig = {
   email: "cpapriyashah@gmail.com",
   address: "356 Col. Phillips Drive, Shelburne, ON L9V 3V5",
   hours: {
-    weekdays: "Monday – Saturday: 9:00 AM – 6:00 PM EST",
+    weekdays: "Monday – Saturday: 9:00 AM – 6:00 PM Eastern Time",
     weekends: "Sunday: Closed",
   },
   mapEmbedUrl:
@@ -15,13 +15,14 @@ export const siteConfig = {
     facebook: "#",
     instagram: "#",
   },
-  formAction: "https://formspree.io/f/PLACEHOLDER",
+  formEndpoint: "/api/contact",
   languages: ["English", "Hindi", "Punjabi", "Gujarati", "Sindhi"],
 };
 
 export const heroContent = {
-  // TODO: Client requested removing "Simplified Accounting & Tax Filing" — awaiting her response on replacement headline
-  // Once she confirms, update this value. If she wants no headline, the Hero component needs to conditionally hide it.
+  // Intentionally empty. While blank, the Hero renders the subtext below as the
+  // page h1, so there is always exactly one h1. Setting a value restores the
+  // two-part layout of headline plus supporting copy.
   headline: "",
   subtext:
     "We help individuals and small businesses across Canada navigate their accounting and taxes with confidence. Personalized service, year-round support, and peace of mind - virtually or in person.",
@@ -55,7 +56,7 @@ export const services = [
   {
     icon: "User",
     title: "Personal Tax Preparation",
-    description: "Accurate, optimized <strong>personal tax filing</strong> for all income sources - salaried, self-employed, rental and Airbnb income optimization, gig economy (Uber, Skip The Dishes, DoorDash), and <strong>newcomers to Canada</strong>. We ensure that you get the maximum out of your tax dollars.",
+    description: "Accurate & optimized personal tax filing for all income sources (salaried, self-employed, rental and AirBnB income, gig economy income, Uber, Skip The Dishes, DoorDash). Free income tax guidance for <strong>newcomers</strong> to Canada. Our goal is to get your dollars working for you efficiently. ",
   },
   {
     icon: "Receipt",

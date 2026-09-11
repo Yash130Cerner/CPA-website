@@ -13,7 +13,7 @@
 
   --color-gold: #D4A853;
   --color-gold-light: #E0BE7A;
-  --color-gold-dark: #B8893A;
+  --color-gold-dark: #C09243;
 
   --color-surface-white: #FFFFFF;
   --color-surface-gray: #F7F8FA;
@@ -66,7 +66,7 @@
   --shadow-card-hover: 0 8px 30px rgba(27, 43, 75, 0.12);
   --shadow-nav: 0 2px 20px rgba(0, 0, 0, 0.06);
 
-  --max-w-container: 1200px;
+  --container-site: 1280px;
 }
 
 html {

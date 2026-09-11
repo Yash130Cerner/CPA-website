@@ -9,7 +9,7 @@ export default function Testimonials() {
       className="bg-surface-cream py-section"
       aria-labelledby="testimonials-heading"
     >
-      <div className="max-w-container mx-auto px-6">
+      <div className="max-w-site mx-auto px-6">
         <SectionHeading
           id="testimonials-heading"
           title="What Our Clients Say"

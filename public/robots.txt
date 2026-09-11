@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pshahaccounting.ca/sitemap.xml

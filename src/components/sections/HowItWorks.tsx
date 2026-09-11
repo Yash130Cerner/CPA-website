@@ -7,10 +7,10 @@ export default function HowItWorks() {
       className="bg-surface-white py-section"
       aria-labelledby="howitworks-heading"
     >
-      <div className="max-w-container mx-auto px-6">
+      <div className="max-w-site mx-auto px-6">
         <SectionHeading id="howitworks-heading" title="How It Works" />
 
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12 lg:gap-0 relative">
+        <div className="flex flex-col lg:flex-row items-start lg:items-start justify-between gap-12 lg:gap-0 relative">
           {/* Horizontal dashed connector (desktop) */}
           <div
             className="hidden lg:block absolute top-7 left-[calc(16.67%+28px)] right-[calc(16.67%+28px)] border-t-2 border-dashed border-teal-light/50"

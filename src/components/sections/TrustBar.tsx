@@ -10,7 +10,7 @@ export default function TrustBar() {
       className="bg-surface-gray border-y border-border py-8"
       aria-label="Credentials"
     >
-      <div className="max-w-container mx-auto px-6">
+      <div className="max-w-site mx-auto px-6">
         <div className="grid grid-cols-2 lg:flex lg:justify-center gap-8 lg:gap-12">
           {trustBadges.map((badge) => {
             const Icon = iconMap[badge.icon];
