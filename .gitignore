@@ -31,3 +31,4 @@ dist-ssr
 # Local-only original asset: large, unused by the build, kept out of the repo
 # and out of deployments. Optimised variants (priya-shah.*) are committed.
 /public/images/p_shah_photo.png
+/public/images/priya-shah-bio-image.png

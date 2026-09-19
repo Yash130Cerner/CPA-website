@@ -1,6 +1,7 @@
-import { UserCircle } from "lucide-react";
 import { aboutContent } from "../../data/content";
 import SectionHeading from "../ui/SectionHeading";
+
+const BIO_SIZES = "(max-width: 1023px) 80vw, 420px";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
     >
       <div className="max-w-site mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-          {/* Image placeholder */}
+          {/* Portrait */}
           <div className="lg:w-[45%] w-[80%] mx-auto lg:mx-0 max-w-[420px]">
             <div className="relative max-h-[360px] md:max-h-[520px]">
               {/* Decorative rectangle behind - hidden on mobile */}
@@ -19,19 +20,23 @@ export default function About() {
                 className="hidden md:block absolute inset-0 bg-gold/[0.12] rounded-card translate-x-3 translate-y-3 rotate-2 z-0"
                 aria-hidden="true"
               />
-              <div className="relative z-10 aspect-[3/4] max-h-[360px] md:max-h-[520px] rounded-2xl overflow-hidden bg-gradient-to-br from-teal to-teal-dark flex flex-col items-center justify-center">
-                <UserCircle
-                  className="w-[100px] h-[100px] text-white/40"
-                  strokeWidth={0.8}
-                  aria-hidden="true"
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/images/priya-shah-bio-540.webp 540w, /images/priya-shah-bio.webp 1080w"
+                  sizes={BIO_SIZES}
                 />
-                <span
-                  className="mt-3 text-small text-white/30 uppercase tracking-widest font-medium"
-                  aria-hidden="true"
-                >
-                  Photo
-                </span>
-              </div>
+                <img
+                  src="/images/priya-shah-bio.jpg"
+                  srcSet="/images/priya-shah-bio-540.jpg 540w, /images/priya-shah-bio.jpg 1080w"
+                  sizes={BIO_SIZES}
+                  width={1080}
+                  height={1446}
+                  loading="lazy"
+                  alt="Priya Shah, CPA, MBA, founder and principal accountant"
+                  className="relative z-10 block aspect-[3/4] max-h-[360px] md:max-h-[520px] w-full rounded-2xl object-cover object-[50%_20%]"
+                />
+              </picture>
             </div>
           </div>
 
